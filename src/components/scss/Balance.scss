@@ -40,6 +40,7 @@
 
 @media (min-width: 1000px) {
   .balance-container {
+    margin-top: 0;
     padding: 16px clamp(24px, -12.364px + 3.636vw, 40px);
   }
 }

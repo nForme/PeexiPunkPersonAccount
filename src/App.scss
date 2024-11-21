@@ -5,5 +5,36 @@
 }
 
 .main {
-  padding: 0 10px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 360px) {
+  .main {
+    .top-section {
+      padding: 0 10px;
+    }
+
+    .navbar-container {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    padding: 0 40px;
+  }
+  .top-section {
+    display: flex;
+    // gap: clamp(100px, -581.818px + 68.182vw, 400px);
+
+    .profile-info-container {
+      flex: 1;
+    }
+    .balance-container {
+      width: clamp(410px, 160px + 25vw, 520px);
+    }
+  }
 }

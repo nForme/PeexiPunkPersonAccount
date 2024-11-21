@@ -1,0 +1,67 @@
+@use "../../assets/variables.scss" as variables;
+
+.characters-container {
+  margin-top: 14px;
+  .character-card {
+    padding: 30px;
+    .character-image {
+      width: 340px;
+      height: 482px;
+    }
+
+    .character-info {
+      .character-username {
+        display: flex;
+        gap: 10px;
+
+        margin-top: 20px;
+      }
+
+      .character-attributes {
+        display: flex;
+        gap: 25px;
+
+        margin-top: 10px;
+        .character-race {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .human-svg-container {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: 1px solid variables.$text-aqua-blue-color;
+            border-radius: 50%;
+          }
+        }
+
+        .character-class {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .bm-svg-container {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: 1px solid variables.$text-aqua-blue-color;
+            border-radius: 50%;
+
+            svg {
+              width: 15.6px;
+              height: 21.6px;
+            }
+          }
+        }
+
+        .character-stats {
+        }
+      }
+    }
+  }
+}
