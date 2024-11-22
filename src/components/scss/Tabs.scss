@@ -1,3 +1,5 @@
+@use "../../assets/variables.scss" as variables;
+
 .navbar {
   position: relative;
 
@@ -28,8 +30,8 @@
 
     .navbar-item {
       position: relative;
-      z-index: 2;
       margin-bottom: 8px;
+      z-index: 2;
 
       &:first-of-type {
         margin-left: 10px;
@@ -37,6 +39,12 @@
 
       &:last-of-type {
         margin-right: 10px;
+      }
+
+      a {
+        font-size: 18px;
+        font-family: variables.$text-medium;
+        color: variables.$text-gray-color;
       }
 
       &.active a {
