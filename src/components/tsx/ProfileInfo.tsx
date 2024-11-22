@@ -7,7 +7,10 @@ const ProfileInfo = () => {
   return (
     <section className="profile-info-container">
       <div className="profile-image-container">
-        <img src="./ProfileInfo/avatar.jpg" className="profile-avatar" />
+        <img
+          src="./PeexiPunkPersonAccount/ProfileInfo/avatar.jpg"
+          className="profile-avatar"
+        />
       </div>
       <div className="profile-container">
         <div className="login-container">
