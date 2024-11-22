@@ -18,7 +18,7 @@ const characters = [
     },
     description:
       "It is a melee character that uses a sword and a shield freely, and it is easy to operate.",
-    image: "./PeexiPunkPersonAccount/CharacterContent/CharacterPhoto.png",
+    image: "/PeexiPunkPersonAccount/CharacterContent/CharacterPhoto.png",
   },
   {
     name: "NeBrasko21",
@@ -34,7 +34,7 @@ const characters = [
     },
     description:
       "It is a melee character that uses a sword and a shield freely, and it is easy to operate.",
-    image: "./PeexiPunkPersonAccount/CharacterContent/CharacterPhoto.png",
+    image: "/PeexiPunkPersonAccount/CharacterContent/CharacterPhoto.png",
   },
 ];
 
