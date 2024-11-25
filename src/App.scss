@@ -10,21 +10,44 @@
   overflow-x: hidden;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 100px) {
   .main {
+    // padding: 10px;
     .top-section {
       padding: 0 10px;
     }
-
     .navbar-container {
       margin-top: 30px;
     }
+
+    .tab-content {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .main {
+    padding: 0 16px;
+
+    .top-section {
+      padding: 0;
+    }
+
+    .tab-content {
+      padding: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    padding: 0 32px;
   }
 }
 
 @media (min-width: 1000px) {
   .main {
-    padding: 0 40px;
+    padding: 0 16px;
   }
   .top-section {
     display: flex;

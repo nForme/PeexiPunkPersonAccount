@@ -20,6 +20,7 @@
     .character-info {
       .character-username {
         display: flex;
+        align-items: center;
         gap: 10px;
 
         margin-top: 20px;
@@ -27,7 +28,11 @@
         .username {
           font-size: 36px;
           font-family: variables.$text-pixel;
-          line-height: 120%;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
         }
       }
 
@@ -52,7 +57,7 @@
 
           .race {
             font-size: 24px;
-            line-height: 120%;
+
             font-family: variables.$text-pixel;
           }
         }
@@ -78,7 +83,7 @@
           }
           .class {
             font-size: 24px;
-            line-height: 120%;
+
             font-family: variables.$text-pixel;
           }
         }
@@ -97,14 +102,14 @@
             align-items: center;
             .level-number {
               font-size: 32px;
-              line-height: 120%;
+
               font-family: variables.$text-pixel;
               color: variables.$text-aqua-blue-color;
             }
 
             .level-text {
               font-size: 16px;
-              line-height: 120%;
+
               font-family: variables.$text-medium;
               color: variables.$text-gray-color;
             }
@@ -113,7 +118,7 @@
           .experience {
             font-size: 16px;
             font-family: variables.$text-medium;
-            line-height: 120%;
+
             color: variables.$text-aqua-blue-color;
           }
         }
@@ -137,14 +142,14 @@
         .title {
           font-size: 16px;
           font-family: variables.$text-medium;
-          line-height: 120%;
+
           color: variables.$text-gray-color;
         }
 
         .score {
           font-size: 32px;
           font-family: variables.$text-pixel;
-          line-height: 120%;
+
           color: variables.$text-aqua-blue-color;
         }
       }
@@ -155,14 +160,47 @@
         .description-title {
           font-size: 16px;
           font-family: variables.$text-medium;
-          line-height: 120%;
+
           color: variables.$text-gray-color;
         }
 
         .description {
           margin-top: 4px;
           font-size: 16px;
-          line-height: 110%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 100px) {
+  .characters-container {
+    .character-card {
+      .character-info {
+        .character-username {
+          .username {
+          }
+        }
+
+        .character-attributes {
+          margin-top: 20px;
+        }
+
+        .character-stats {
+          margin-top: 20px;
+          .level-content-container {
+            .level-container {
+              .level-number {
+              }
+
+              .level-text {
+              }
+            }
+          }
+        }
+
+        .progress-bar {
+          margin-top: 10px;
         }
       }
     }
@@ -185,7 +223,7 @@
           margin-top: 0;
 
           .username {
-            font-size: 20px;
+            font-size: 30px;
           }
         }
 
@@ -248,6 +286,49 @@
 
           .description {
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .characters-container {
+    .character-card {
+      padding: 32px 50px;
+      height: clamp(442px, -113.429px + 72.321vw, 604px);
+      .character-image {
+        margin-right: 35px;
+        flex: 0 0 clamp(267px, -79.286px + 45.089vw, 368px);
+      }
+
+      .character-info {
+        .character-username {
+          .username {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .characters-container {
+    .character-card {
+      .character-image {
+        margin-right: 40px;
+      }
+
+      .character-info {
+        .character-username {
+          .username {
+            font-size: 40px;
+          }
+          svg {
+            width: 24px;
+            height: 24px;
           }
         }
       }
