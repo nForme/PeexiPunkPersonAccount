@@ -87,3 +87,15 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  .navbar {
+    .navbar-list {
+      .navbar-item {
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

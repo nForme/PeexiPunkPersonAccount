@@ -61,3 +61,15 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .main {
+    padding: 0 40px;
+  }
+
+  .top-section {
+    .balance-container {
+      width: clamp(520px, 160px + 25vw, 640px);
+    }
+  }
+}

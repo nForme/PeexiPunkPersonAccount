@@ -23,7 +23,7 @@
         align-items: center;
         gap: 10px;
 
-        margin-top: 20px;
+        margin-top: 30px;
 
         .username {
           font-size: 36px;
@@ -38,8 +38,9 @@
 
       .character-attributes {
         display: flex;
-        gap: 25px;
+        gap: 26px;
 
+        margin-top: 20px;
         .character-race {
           display: flex;
           align-items: center;
@@ -92,14 +93,14 @@
       .character-stats {
         display: flex;
         flex-direction: column;
-
+        margin-top: 22px;
         .level-content-container {
           display: flex;
-          align-items: center;
+          align-items: flex-end;
           justify-content: space-between;
           .level-container {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             .level-number {
               font-size: 32px;
 
@@ -109,17 +110,17 @@
 
             .level-text {
               font-size: 16px;
-
               font-family: variables.$text-medium;
               color: variables.$text-gray-color;
+              line-height: 69%;
             }
           }
 
           .experience {
             font-size: 16px;
             font-family: variables.$text-medium;
-
             color: variables.$text-aqua-blue-color;
+            line-height: 69%;
           }
         }
 
@@ -128,6 +129,8 @@
           height: 10px;
           background-color: variables.$progress-bar-background-color;
           border-radius: 2px;
+
+          margin-top: 10px;
           .progress {
             height: 10px;
             background: variables.$progress-gradient-color;
@@ -137,7 +140,7 @@
       }
 
       .gear-score-container {
-        margin-top: 20px;
+        margin-top: 24px;
 
         .title {
           font-size: 16px;
@@ -147,6 +150,7 @@
         }
 
         .score {
+          margin-top: 14px;
           font-size: 32px;
           font-family: variables.$text-pixel;
 
@@ -155,7 +159,7 @@
       }
 
       .description-container {
-        margin-top: 10px;
+        margin-top: 24px;
 
         .description-title {
           font-size: 16px;
@@ -165,42 +169,9 @@
         }
 
         .description {
-          margin-top: 4px;
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 100px) {
-  .characters-container {
-    .character-card {
-      .character-info {
-        .character-username {
-          .username {
-          }
-        }
-
-        .character-attributes {
-          margin-top: 20px;
-        }
-
-        .character-stats {
-          margin-top: 20px;
-          .level-content-container {
-            .level-container {
-              .level-number {
-              }
-
-              .level-text {
-              }
-            }
-          }
-        }
-
-        .progress-bar {
           margin-top: 10px;
+          font-size: 16px;
+          line-height: 110%;
         }
       }
     }
@@ -213,12 +184,13 @@
       display: flex;
       flex-direction: row;
       height: clamp(336px, 34.96px + 53vw, 442px);
-      padding: 24px;
+      padding: 24px 20px;
       .character-image {
         margin-right: 20px;
         flex: 0 0 clamp(203px, 21.24px + 32vw, 267px);
       }
       .character-info {
+        margin-top: 6px;
         .character-username {
           margin-top: 0;
 
@@ -228,14 +200,31 @@
         }
 
         .character-attributes {
-          margin-top: 3px;
+          margin-top: 12px;
+          gap: 20px;
           .character-race {
+            .human-svg-container {
+              width: 26px;
+              height: 26px;
+              svg {
+                height: 15.6px;
+                width: 15.6px;
+              }
+            }
             .race {
               font-size: 20px;
             }
           }
 
           .character-class {
+            .bm-svg-container {
+              width: 26px;
+              height: 26px;
+              svg {
+                width: 14px;
+                height: 18px;
+              }
+            }
             .class {
               font-size: 20px;
             }
@@ -243,8 +232,8 @@
         }
 
         .character-stats {
+          margin-top: 16px;
           .level-content-container {
-            margin-top: 10px;
             .level-container {
               .level-number {
                 font-size: 28px;
@@ -269,12 +258,13 @@
         }
 
         .gear-score-container {
-          margin-top: 18px;
+          margin-top: 20px;
           .title {
             font-size: 16px;
           }
 
           .score {
+            margin-top: 10px;
             font-size: 28px;
           }
         }
@@ -304,9 +294,77 @@
       }
 
       .character-info {
+        margin-top: 10px;
         .character-username {
           .username {
             font-size: 36px;
+          }
+        }
+
+        .character-attributes {
+          margin-top: 20px;
+
+          .character-race {
+            .human-svg-container {
+              width: 30px;
+              height: 30px;
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+            .race {
+              font-size: 24px;
+            }
+          }
+
+          .character-class {
+            .bm-svg-container {
+              width: 30px;
+              height: 30px;
+              svg {
+                width: 16px;
+                height: 21px;
+              }
+            }
+            .class {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .character-stats {
+          margin-top: 22px;
+
+          .level-content-container {
+            .level-container {
+              .level-number {
+                font-size: 32px;
+              }
+
+              .level-text {
+                font-size: 16px;
+              }
+            }
+            .experience {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .gear-score-container {
+          margin-top: 24px;
+
+          .score {
+            margin-top: 12px;
+            font-size: 32px;
+          }
+        }
+
+        .description-container {
+          .description {
+            margin-top: 12px;
+            font-size: 16px;
           }
         }
       }
@@ -329,6 +387,295 @@
           svg {
             width: 24px;
             height: 24px;
+          }
+        }
+
+        .character-attributes {
+          margin-top: 24px;
+          gap: 30px;
+          .character-race {
+            .human-svg-container {
+              height: 40px;
+              width: 40px;
+              svg {
+                height: 24px;
+                width: 24px;
+              }
+            }
+
+            .race {
+              font-size: 30px;
+            }
+          }
+
+          .character-class {
+            .bm-svg-container {
+              height: 40px;
+              width: 40px;
+
+              svg {
+                height: 24px;
+                width: 24px;
+              }
+            }
+
+            .class {
+              font-size: 30px;
+            }
+          }
+        }
+        .character-stats {
+          margin-top: 26px;
+          .level-content-container {
+            .level-container {
+              .level-number {
+                font-size: 42px;
+              }
+
+              .level-text {
+                font-size: 18px;
+              }
+            }
+
+            .experience {
+              font-size: 18px;
+            }
+          }
+
+          .progress-bar {
+            margin-top: 14px;
+          }
+        }
+
+        .gear-score-container {
+          .title {
+            font-size: 18px;
+          }
+
+          .score {
+            margin-top: 16px;
+            font-size: 42px;
+          }
+        }
+
+        .description-container {
+          margin-top: 34px;
+          .description-title {
+            font-size: 18px;
+          }
+
+          .description {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .characters-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .character-card {
+      height: clamp(420px, -24px + 30.833vw, 568px);
+      &:nth-last-child(1) {
+        margin-top: 0;
+      }
+
+      .character-image {
+        margin-right: 30px;
+        flex: 0 0 clamp(254px, -13px + 18.542vw, 343px);
+      }
+
+      .character-info {
+        margin-top: 0;
+
+        .character-username {
+          .username {
+            font-size: 36px;
+          }
+
+          svg {
+            height: 18px;
+            width: 18px;
+          }
+        }
+
+        .character-attributes {
+          margin-top: 20px;
+          .character-race {
+            .human-svg-container {
+              width: 30px;
+              height: 30px;
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+
+            .race {
+              font-size: 24px;
+            }
+          }
+
+          .character-class {
+            .bm-svg-container {
+              width: 30px;
+              height: 30px;
+              svg {
+                width: 16px;
+                height: 21px;
+              }
+            }
+
+            .class {
+              font-size: 24px;
+            }
+          }
+        }
+        .character-stats {
+          margin-top: 22px;
+          .level-content-container {
+            .level-container {
+              .level-number {
+                font-size: 32px;
+              }
+
+              .level-text {
+                font-size: 16px;
+              }
+            }
+
+            .experience {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .gear-score-container {
+          .title {
+            font-size: 16px;
+          }
+
+          .score {
+            margin-top: 12px;
+            font-size: 32px;
+          }
+        }
+
+        .description-container {
+          margin-top: 24px;
+          .description-title {
+            font-size: 16px;
+          }
+
+          .description {
+            margin-top: 12px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .characters-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    .character-card {
+      .character-image {
+        margin-right: 30px;
+      }
+
+      .character-info {
+        margin-top: 0;
+
+        .character-username {
+          .username {
+            font-size: 40px;
+          }
+
+          svg {
+            height: 24px;
+            width: 24px;
+          }
+        }
+
+        .character-attributes {
+          margin-top: 20px;
+          .character-race {
+            .human-svg-container {
+              width: 40px;
+              height: 40px;
+              svg {
+                width: 24px;
+                height: 24px;
+              }
+            }
+
+            .race {
+              font-size: 30px;
+            }
+          }
+
+          .character-class {
+            .bm-svg-container {
+              width: 40px;
+              height: 40px;
+              svg {
+                width: 24px;
+                height: 24px;
+              }
+            }
+
+            .class {
+              font-size: 30px;
+            }
+          }
+        }
+        .character-stats {
+          margin-top: 22px;
+          .level-content-container {
+            .level-container {
+              .level-number {
+                font-size: 42px;
+              }
+
+              .level-text {
+                font-size: 18px;
+              }
+            }
+
+            .experience {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .gear-score-container {
+          .title {
+            font-size: 18px;
+          }
+
+          .score {
+            margin-top: 12px;
+            font-size: 42px;
+          }
+        }
+
+        .description-container {
+          margin-top: 24px;
+          .description-title {
+            font-size: 18px;
+          }
+
+          .description {
+            margin-top: 12px;
+            font-size: 20px;
           }
         }
       }
