@@ -13,19 +13,17 @@
   .balance-item {
     font-family: variables.$text-medium;
     color: variables.$text-gray-color;
-    font-size: 18px;
-    line-height: 120%;
     margin-top: 10px;
     .balance-amount {
       font-family: variables.$text-pixel;
       color: variables.$text-aqua-blue-color;
-      font-size: 36px;
+      font-size: 34px;
       line-height: 90%;
     }
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 100px) {
   .balance-container {
     margin-top: 20px;
     padding: 16px 20px;
@@ -40,7 +38,6 @@
 
 @media (min-width: 1000px) {
   .balance-container {
-    margin-top: 0;
     padding: 16px clamp(24px, -12.364px + 3.636vw, 40px);
   }
 }
@@ -49,7 +46,6 @@
   .balance-container {
     padding: clamp(16px, -26px + 2.917vw, 30px)
       clamp(24px, -12.364px + 3.636vw, 40px);
-
     .balance-title {
       font-size: clamp(24px, 0px + 1.667vw, 32px);
     }

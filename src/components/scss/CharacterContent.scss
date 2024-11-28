@@ -7,6 +7,10 @@
     border-radius: 10px;
     border: 1px solid variables.$border-color;
 
+    &:hover {
+      border: 1px solid variables.$hover-border-card-color;
+    }
+
     &:nth-last-child(1) {
       margin-top: 20px;
     }
@@ -493,6 +497,7 @@
         margin-top: 0;
 
         .character-username {
+          margin-top: 3px;
           .username {
             font-size: 36px;
           }
@@ -504,6 +509,7 @@
         }
 
         .character-attributes {
+          gap: 25px;
           margin-top: 20px;
           .character-race {
             .human-svg-container {
@@ -522,7 +528,7 @@
 
           .character-class {
             .bm-svg-container {
-              width: 30px;
+              max-width: 30px;
               height: 30px;
               svg {
                 width: 16px;
@@ -531,6 +537,7 @@
             }
 
             .class {
+              text-wrap: nowrap;
               font-size: 24px;
             }
           }

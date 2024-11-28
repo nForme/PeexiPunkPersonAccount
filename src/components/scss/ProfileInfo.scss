@@ -18,7 +18,7 @@
   .profile-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
 
     .login-container {
       .login {
@@ -34,6 +34,36 @@
 
         font-family: variables.$text-medium;
         color: variables.$text-gray-color;
+      }
+
+      .wallet-svg {
+        .path-fill {
+          fill: #707070;
+        }
+      }
+
+      .copy-svg {
+        .path-fill {
+          fill: #707070;
+        }
+      }
+
+      &:hover {
+        .address {
+          color: variables.$text-default-color;
+        }
+
+        .wallet-svg {
+          .path-fill {
+            fill: variables.$hover-address-color;
+          }
+        }
+
+        .copy-svg {
+          .path-fill {
+            fill: #fefefe;
+          }
+        }
       }
     }
 
@@ -73,17 +103,14 @@
       }
 
       .address-container {
-        display: flex;
-        align-items: center;
-        margin-top: clamp(6px, 0.324px + 1.351vw, 8px);
+        margin-top: 14px;
         .address {
           font-size: clamp(16px, 10.324px + 1.351vw, 18px);
         }
       }
 
       .email-container {
-        margin-top: clamp(6px, 0.324px + 1.351vw, 8px);
-
+        margin-top: 16px;
         .header-email {
           font-size: clamp(16px, 10.324px + 1.351vw, 18px);
         }
@@ -143,8 +170,8 @@
 @media (min-width: 1440px) {
   .profile-info-container {
     .profile-image-container {
-      width: 160px;
-      height: 160px;
+      width: clamp(120px, 0px + 8.333vw, 160px);
+      height: clamp(120px, 0px + 8.333vw, 160px);
     }
   }
 }
