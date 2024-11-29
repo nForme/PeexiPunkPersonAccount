@@ -15,6 +15,8 @@
       margin-top: 20px;
     }
     .character-image {
+      border-radius: 6px;
+      outline: 1px solid variables.$border-color;
       img {
         object-fit: cover;
         width: 100%;
@@ -547,6 +549,7 @@
           margin-top: 22px;
           .level-content-container {
             .level-container {
+              gap: 8px;
               .level-number {
                 font-size: 32px;
               }
@@ -580,7 +583,7 @@
           }
 
           .description {
-            margin-top: 12px;
+            margin-top: 5px;
             font-size: 16px;
           }
         }

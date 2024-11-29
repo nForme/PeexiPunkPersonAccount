@@ -18,7 +18,6 @@
   .profile-container {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
 
     .login-container {
       .login {
@@ -29,6 +28,8 @@
     }
 
     .address-container {
+      display: flex;
+      align-items: center;
       .address {
         margin: 0 6px;
 
@@ -37,12 +38,14 @@
       }
 
       .wallet-svg {
+        align-self: flex-start;
         .path-fill {
           fill: #707070;
         }
       }
 
       .copy-svg {
+        align-self: flex-end;
         .path-fill {
           fill: #707070;
         }
@@ -172,6 +175,28 @@
     .profile-image-container {
       width: clamp(120px, 0px + 8.333vw, 160px);
       height: clamp(120px, 0px + 8.333vw, 160px);
+    }
+
+    .profile-container {
+      .login-container {
+      }
+
+      .address-container {
+        margin-top: 11px;
+
+        .wallet-svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .email-container {
+        margin-top: 12px;
+        .copy-svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
     }
   }
 }
