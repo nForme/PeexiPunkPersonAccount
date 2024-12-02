@@ -215,3 +215,41 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  .profile-info-container {
+    .profile-image-container {
+    }
+    .profile-container {
+      .login-container {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .address-container {
+        margin-top: 12px;
+
+        .wallet-svg {
+          width: 18px;
+          height: 18px;
+        }
+
+        .copy-svg {
+          width: 18px;
+          height: 20px;
+        }
+      }
+
+      .email-container {
+        margin-top: 16px;
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
