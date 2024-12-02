@@ -179,10 +179,17 @@
 
     .profile-container {
       .login-container {
+        .login {
+          font-size: clamp(20px, 2px + 1.25vw, 26px);
+        }
       }
 
       .address-container {
         margin-top: 11px;
+
+        .address {
+          font-size: clamp(18px, 6px + 0.833vw, 22px);
+        }
 
         .wallet-svg {
           width: 14px;
@@ -192,6 +199,14 @@
 
       .email-container {
         margin-top: 12px;
+
+        .header-email {
+          font-size: clamp(18px, 6px + 0.833vw, 22px);
+        }
+
+        .email {
+          font-size: clamp(18px, 6px + 0.833vw, 22px);
+        }
         .copy-svg {
           width: 14px;
           height: 14px;

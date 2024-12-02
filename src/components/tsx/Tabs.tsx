@@ -60,7 +60,7 @@ const NavBar: React.FC<Props> = () => {
             }`}
           >
             <a href="#" onClick={() => handleTabClick("Account Settings")}>
-              Account Settings
+              Account settings
             </a>
           </li>
         </ul>
