@@ -47,7 +47,7 @@
 
 @media (min-width: 1000px) {
   .main {
-    padding: 0 16px;
+    padding: 0 15px;
   }
   .top-section {
     display: flex;
@@ -62,6 +62,12 @@
   }
 }
 
+@media (min-width: 1210px) {
+  .main {
+    padding: 0 40px;
+  }
+}
+
 @media (min-width: 1440px) {
   .main {
     padding: 0 40px;
@@ -70,6 +76,14 @@
   .top-section {
     .balance-container {
       width: clamp(520px, 160px + 25vw, 640px);
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .main {
+    .navbar-container {
+      margin-top: 50px;
     }
   }
 }
