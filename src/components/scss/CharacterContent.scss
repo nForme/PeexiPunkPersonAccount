@@ -389,10 +389,11 @@
     .character-card {
       padding: 40px 73px;
       .character-image {
-        margin-right: 40px;
+        margin-right: 41px;
       }
 
       .character-info {
+        margin-top: 10px;
         .character-username {
           .username {
             font-size: 40px;
@@ -441,6 +442,7 @@
           margin-top: 26px;
           .level-content-container {
             .level-container {
+              gap: 9px;
               .level-number {
                 font-size: 42px;
               }
@@ -490,11 +492,11 @@
   .characters-container {
     display: flex;
     flex-direction: row;
-    gap: 7px;
+    gap: 10px;
 
     .character-card {
       height: clamp(400px, 294.783px + 8.696vw, 420px);
-      padding: 29px 17px;
+      padding: 30px 20px;
       &:nth-last-child(1) {
         margin-top: 0;
       }
@@ -519,8 +521,8 @@
 
         .character-attributes {
           flex-direction: column;
-          margin-top: 17px;
-          gap: 6px;
+          margin-top: 13px;
+          gap: 9px;
           .character-race {
             .human-svg-container {
               width: 30px;
@@ -554,7 +556,7 @@
         }
 
         .character-stats {
-          margin-top: 18px;
+          margin-top: 16px;
           .level-content-container {
             .level-container {
               .level-number {
