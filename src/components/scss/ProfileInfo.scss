@@ -86,12 +86,24 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) {
   .profile-info-container {
     .profile-image-container {
-      margin-right: clamp(15px, 0.811px + 3.378vw, 20px);
-      width: 60px;
-      height: 60px;
+      width: clamp(60px, -180px + 66.667vw, 100px);
+      height: clamp(60px, -180px + 66.667vw, 100px);
+    }
+
+    .profile-container {
+      .login-container {
+      }
+
+      .address-container {
+        margin-top: 8px;
+      }
+
+      .email-container {
+        margin-top: 8px;
+      }
     }
   }
 }
@@ -106,14 +118,12 @@
       }
 
       .address-container {
-        margin-top: 14px;
         .address {
           font-size: clamp(16px, 10.324px + 1.351vw, 18px);
         }
       }
 
       .email-container {
-        margin-top: 16px;
         .header-email {
           font-size: clamp(16px, 10.324px + 1.351vw, 18px);
         }
