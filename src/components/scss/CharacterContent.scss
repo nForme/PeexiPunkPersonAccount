@@ -91,7 +91,7 @@
           }
           .class {
             font-size: 24px;
-
+            text-wrap: nowrap;
             font-family: variables.$text-pixel;
           }
         }
@@ -185,6 +185,68 @@
           margin-top: 7px;
           font-size: 16px;
           line-height: 110%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .characters-container {
+    .character-card {
+      .character-image {
+      }
+
+      .character-info {
+        .character-username {
+        }
+
+        .character-attributes {
+          margin-top: 17px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .character-stats {
+          margin-top: 18px;
+        }
+
+        .gear-score-container {
+          margin-top: 20px;
+        }
+
+        .description-container {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .characters-container {
+    .character-card {
+      .character-image {
+      }
+
+      .character-info {
+        .character-username {
+        }
+
+        .character-attributes {
+          display: flex;
+          flex-direction: row;
+          gap: 26px;
+        }
+
+        .character-stats {
+        }
+
+        .gear-score-container {
+        }
+
+        .description-container {
         }
       }
     }
@@ -565,6 +627,7 @@
           margin-top: 16px;
           .level-content-container {
             .level-container {
+              gap: 8px;
               .level-number {
                 font-size: 32px;
               }
