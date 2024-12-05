@@ -11,7 +11,7 @@
     .profile-avatar {
       width: 100%;
       height: 100%;
-      border-radius: 50%;
+      clip-path: circle(50%);
     }
   }
 
@@ -106,8 +106,8 @@
         }
 
         .wallet-svg {
-          width: 12px;
-          height: 12px;
+          width: 13px;
+          height: 13px;
         }
       }
 
@@ -130,6 +130,9 @@
       .address-container {
         .address {
           font-size: clamp(16px, 10.324px + 1.351vw, 18px);
+        }
+
+        .copy-svg {
         }
       }
 

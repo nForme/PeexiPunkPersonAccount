@@ -8,7 +8,7 @@ const ProfileInfo = () => {
     <section className="profile-info-container">
       <div className="profile-image-container">
         <img
-          src="/PeexiPunkPersonAccount/ProfileInfo/avatar.jpg"
+          src="/PeexiPunkPersonAccount/ProfileInfo/avatar.png"
           className="profile-avatar"
         />
       </div>
