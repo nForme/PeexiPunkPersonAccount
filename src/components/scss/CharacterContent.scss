@@ -795,7 +795,9 @@
       .character-info {
         margin-top: 12px;
         .character-username {
+          align-items: flex-end;
           .username {
+            line-height: 0.5;
             font-size: 40px;
           }
 
