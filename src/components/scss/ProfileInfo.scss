@@ -99,6 +99,16 @@
 
       .address-container {
         margin-top: 8px;
+
+        .copy-svg {
+          width: 13px;
+          height: 14px;
+        }
+
+        .wallet-svg {
+          width: 12px;
+          height: 12px;
+        }
       }
 
       .email-container {
@@ -158,8 +168,13 @@
         .address {
         }
 
-        svg {
-          width: 16px;
+        .wallet-svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .copy-svg {
+          width: 15px;
           height: 16px;
         }
       }
